@@ -16,6 +16,14 @@ use App\Message;
 
 //测试pusher
 Route::get('/pusher/test', function () {  
+    $pusher = app()->make('pusher');
+    /** 
+     * channel:  频道 类似于电视台有同的频道
+     * evnet  :  事件 类似于在一个频道有不同的节目名称
+     * data   :  数据 类似于节目的内容
+     * trigger() 相当于电视台有一个节目要播放了，那么下一步要收看电视节目，就需要每个人都有一个电视机去监听频道中的事件
+    */
+    $pusher->trigger('cctv-1','三国演绎',['data'=>'第一章：桃源三结义']);
     return view('pusher.test');
 });
 //登录用户点击和谁通话后 
