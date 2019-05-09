@@ -1,0 +1,24 @@
+.card{
+    .icon-bar{
+      width:100%;
+      background-color: #dff0d8;
+      opacity: 0.7;
+      list-style:none;
+      position: absolute;
+      top:0;
+      z-index:100;
+        li{
+          float:right;
+          margin-right:.7rem;
+            .btn {
+              background:transparent;
+              border:none;
+              border-radius:none;
+              padding:0;
+                .fa-btn{
+                  color:#d9534a;
+                }
+            }       
+        }
+    }
+  }
