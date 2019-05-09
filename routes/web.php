@@ -26,6 +26,16 @@ Route::get('/pusher/test', function () {
     $pusher->trigger('cctv-1','三国演绎',['data'=>'第一章：桃源三结义']);
     return view('pusher.test');
 });
+
+
+
+
+
+
+
+
+
+
 //登录用户点击和谁通话后 
 Route::post('/notification/auth','ChatController@notificationAuth');
 Route::post('/pusher/auth','ChatController@auth');
